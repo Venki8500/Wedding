@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: transparent;
+    background-image: url('./3.jpg  ');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('./2.jpg');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-date {
+    font-family: 'Great Vibes', cursive;
+    color: #DAA520;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.names {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    color: #DC143C;
+}
+
+.getting-married {
+    font-size: 1.5rem;
+     color: #afc5ff;
+     margin: 1rem 0;
+    font-weight: bold;
+}
+.lak {
+    /* border: 1px solid gray; */
+    backdrop-filter: blur(2px);
+    color: blue !important;
+    padding-left: 110px !important;
+    font-size: large;
+}
+.getting-save {
+    font-size: 1.5rem;
+      color: #afc5ff;
+    
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.calendar-icon {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.wedding-date {
+    color:#DC143C;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.countdown-container {
+    /* background-color: #fff; */
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.countdown-container h4 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+.countdown-box span:first-child {
+    font-size: 2.5rem;
+    color: #DC143C;
+    font-weight: bold;
+}
+
+.label {
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+
+
+@keyframes bounce {
+    
+}
+
+
+.venue-details {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.venue-name {
+    font-size: 2rem;
+    color:blue;
+    margin-bottom: 1rem;
+}
+
+.venue-address {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.event-time {
+    font-size: 1.3rem;
+    color: #DC143C;
+    margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .venue-name {
+        font-size: 1.5rem;
+    }
+    
+    .venue-address {
+        font-size: 1rem;
+    }
+    
+    .event-time {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+        max-width: 95%;
+    }
+
+    .save-date {
+        font-size: 2.5rem;
+    }
+
+    .names {
+        font-size: 2.8rem;
+    }
+
+    .getting-married {
+        font-size: 1.3rem;
+    }
+
+    .wedding-date {
+        font-size: 1.7rem;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .countdown-box {
+        min-width: 70px;
+        padding: 0.8rem;
+    }
+
+    .countdown-box span:first-child {
+        font-size: 2rem;
+    }
+
+    .venue-details {
+        padding: 1rem;
+    }
+
+    .venue-name {
+        font-size: 1.8rem;
+    }
+    
+    .venue-address {
+        font-size: 1.1rem;
+    }
+    
+    .event-time {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .save-date {
+        font-size: 2rem;
+    }
+
+    .names {
+        font-size: 2.2rem;
+    }
+
+    .getting-married {
+        font-size: 1.1rem;
+    }
+
+    .wedding-date {
+        font-size: 1.4rem;
+    }
+
+    .countdown-box {
+        min-width: 60px;
+        padding: 0.6rem;
+    }
+
+    .countdown-box span:first-child {
+        font-size: 1.8rem;
+    }
+
+    .venue-name {
+        font-size: 1.5rem;
+    }
+    
+    .venue-address {
+        font-size: 1rem;
+    }
+    
+    .event-time {
+        font-size: 1.1rem;
+    }
+}
